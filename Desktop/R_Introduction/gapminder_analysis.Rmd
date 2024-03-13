@@ -71,7 +71,7 @@ Over `r num_obs` observations, the median population was `r round(med_pop/10e6, 
 
 # Plotting Life Expectancy Over the Years
 
-```{r line_graph}
+```{r line_graph, message = FALSE}
 library(ggplot2)
 p1 <- ggplot(data = gapminder_df, aes(x= year, y= lifeExp,
                                 group = country, color = continent)) +
@@ -102,3 +102,4 @@ ggplot(data = gapminder_df, aes(x = pop)) +
 |                     |                            |                       |
 |                     |                            |                       |
 
+# Adding some new lines because we are working on Git
